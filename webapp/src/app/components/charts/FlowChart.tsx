@@ -15,7 +15,7 @@ import {
 import { ChainAddress } from "@/app/types/chainAddress";
 
 const fitViewOptions: FitViewOptions = {
-  padding: 0.3,
+  padding: 0.5,
 };
 
 type FlowChartProps = {
