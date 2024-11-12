@@ -9,7 +9,7 @@ export const useFundingGraph = ({ chainId, address }: ChainAddress) => {
     queryKey: ["funds", chainId, address],
     queryFn: () =>
       fetch(
-        `http://localhost:8000/api/v1/funding/graph/${chainId}/${address}`
+        `${process.env.NEXT_PUBLIC_API_URL}/funding/graph/${chainId}/${address}`
       ).then((res) => res.json()),
   });
 
