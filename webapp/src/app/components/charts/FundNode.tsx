@@ -6,7 +6,7 @@ interface AddressNodeData extends ChainAddress {
   readonly isSource?: boolean;
 }
 
-export const FundNode: FC<NodeProps<AddressNodeData>> = (node) => {
+const FundNode: FC<NodeProps<AddressNodeData>> = (node) => {
   const { data } = node;
   const { address, name, isSource } = data;
 
@@ -45,3 +45,5 @@ export const FundNode: FC<NodeProps<AddressNodeData>> = (node) => {
     </div>
   );
 };
+
+export default FundNode;

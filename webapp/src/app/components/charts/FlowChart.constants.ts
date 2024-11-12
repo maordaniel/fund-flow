@@ -1,5 +1,5 @@
-import { FundEdge } from '@/app/components/charts/FundEdge';
-import { FundNode } from '@/app/components/charts/FundNode';
+import FundEdge from '@/app/components/charts/FundEdge';
+import FundNode from '@/app/components/charts/FundNode';
 
 
 export const NODE_TYPES = {

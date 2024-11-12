@@ -1,7 +1,7 @@
 import React from "react";
 import { BaseEdge, EdgeProps, getBezierPath } from "reactflow";
 
-export function FundEdge({
+const FundEdge = ({
   sourceX,
   sourceY,
   targetX,
@@ -9,7 +9,7 @@ export function FundEdge({
   sourcePosition,
   targetPosition,
   markerEnd,
-}: EdgeProps) {
+}: EdgeProps) => {
   const [path] = getBezierPath({
     sourceX,
     sourceY,
@@ -23,3 +23,6 @@ export function FundEdge({
     <BaseEdge path={path} markerEnd={markerEnd} style={{ stroke: "#aac0f9" }}   />
   );
 }
+
+
+export default FundEdge
