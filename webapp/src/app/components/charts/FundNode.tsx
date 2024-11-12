@@ -10,11 +10,12 @@ const FundNode: FC<NodeProps<AddressNodeData>> = (node) => {
   const { data } = node;
   const { address, name, isSource } = data;
 
-  const backgroundColor = isSource ? "[#f1f9ff]" : "white";
+  const backgroundColor = isSource ? "#f1f9ff" : "white";
 
   return (
     <div
-      className={`bg-${backgroundColor} h-20 border-2 border-[#d9eefb] p-4 rounded-lg w-60 flex flex-col justify-center`}
+      style={{ backgroundColor }}
+      className={` h-20 border-2 border-[#d9eefb] p-4 rounded-lg w-60 flex flex-col justify-center`}
     >
       <Handle
         style={{
